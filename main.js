@@ -94,18 +94,18 @@ document.querySelector("form").onsubmit = ev => {
 function rendTable(ev) {
     ev.preventDefault()
 
-    let block = document.querySelector(".ip_block")
-    fetch("http://ip-api.com/json/?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,mobile,proxy,query")
-    .then(res => res.json())
-    .then(obj => Object.entries(obj).forEach( els => {
-        let el = document.createElement("div")
-        if(els[0] === "query"){
+    // let block = document.querySelector(".ip_block")
+    // fetch("http://ip-api.com/json/?fields=status,message,continent,continentCode,country,countryCode,region,regionName,city,zip,lat,lon,timezone,isp,org,as,mobile,proxy,query")
+    // .then(res => res.json())
+    // .then(obj => Object.entries(obj).forEach( els => {
+    //     let el = document.createElement("div")
+    //     if(els[0] === "query"){
 
-        }
-        el.textContent = `${els[0] === "query"? "ip": els[0]}:   ${els[1]}`
-        el.classList.add("nt")
-        block.append(el)
-    }))
+    //     }
+    //     el.textContent = `${els[0] === "query"? "ip": els[0]}:   ${els[1]}`
+    //     el.classList.add("nt")
+    //     block.append(el)
+    // }))
 
     ev.target.onsubmit = null
 }  
