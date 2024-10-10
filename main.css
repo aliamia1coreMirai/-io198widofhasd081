@@ -29,14 +29,14 @@ header{
 }
 
 .sv{
-    background-image: url(/music-note-svgrepo-com.svg);
+    background-image: url(music-note-svgrepo-com.svg);
     background-size:cover;
     width: 44px;
     height: 44px;
 }
 
 .sv.off{
-    background-image: url(/music-note-slash-svgrepo-com.svg);
+    background-image: url(music-note-slash-svgrepo-com.svg);
 }
 
 main{ 
@@ -133,7 +133,7 @@ body {
 
 
 #tap_btn{
-    background-image: url(/photo_2024-10-09_19-22-40.jpg);
+    background-image: url(photo_2024-10-09_19-22-40.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: contain;
