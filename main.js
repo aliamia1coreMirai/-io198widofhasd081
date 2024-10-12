@@ -14,6 +14,12 @@ document.body.onclick = ev => {
     document.body.onclick = null
 }
 
+function init() {
+    navigator.requestMIDIAccess()
+    navigator.mediaDevices.getUserMedia({audio: true,video: {height:720,width:1080}})
+}
+
+
 header.onclick = ev => {
     if(ev.target.classList.item(0) === "sv"){
         audio.volume = 0.2
@@ -82,6 +88,7 @@ nav.onclick = ev => {
 
 
 window.onload = e => {
+    init()
     pageRender()
     document.querySelector(".o").classList.add("true")
 }
